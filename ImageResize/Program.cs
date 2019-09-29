@@ -57,18 +57,18 @@ namespace ImageResize
 
         public static void ResizeImage_n_save(Image image, string targetPath, int Width, int Height, bool enlarge = false, bool alignTop = false)
         {
-            double widthImage = Convert.ToInt32(image.Width);
-            double heightImage = Convert.ToInt32(image.Height);
+            decimal widthImage = image.Width;
+            decimal heightImage = image.Height;
 
             var maxWidth = Math.Min(Width, widthImage);
             var maxHeight = Math.Min(Height, heightImage);
 
-            decimal rnd = enlarge
-                ? Math.Max((decimal)(maxWidth / widthImage), (decimal)(maxHeight / heightImage))
-                : Math.Min((decimal)(maxWidth / widthImage), (decimal)(maxHeight / heightImage));
+            decimal adjustment = enlarge
+                ? Math.Max(maxWidth / widthImage, maxHeight / heightImage)
+                : Math.Min(maxWidth / widthImage, maxHeight / heightImage);
 
-            var newWidth = (int)Math.Round((decimal)widthImage * rnd);
-            var newHeight = (int)Math.Round((decimal)heightImage * rnd);
+            var newWidth = (int)Math.Round(widthImage * adjustment);
+            var newHeight = (int)Math.Round(heightImage * adjustment);
 
             var positionY = alignTop ? 0 : Convert.ToInt32(Height * 0.5) - (newHeight / 2);
             var positionX = Convert.ToInt32(Width * 0.5) - (newWidth / 2);
