@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using System.Drawing;
 using System.IO;
 using System.Drawing.Drawing2D;
@@ -16,17 +11,14 @@ namespace ImageResize
         [STAThread]
         static void Main(string[] args)
         {
-            var largura = "";
-            var altura = "";
-
             var origem = "";
             var destino = "";
 
             Console.WriteLine("Entre com a largura");
-            largura = Console.ReadLine();
+            var largura = Console.ReadLine();
 
             Console.WriteLine("Entre com a altura");
-            altura = Console.ReadLine();
+            var altura = Console.ReadLine();
 
             FolderBrowserDialog fbd = new FolderBrowserDialog();
 
@@ -42,7 +34,7 @@ namespace ImageResize
                 Environment.Exit(0);
 
 
-            Console.Write("Processando...");
+            Console.Write("Processando... ");
             foreach (var filePath in Directory.GetFiles(origem))
             {
                 var img = Image.FromFile(filePath);
