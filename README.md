@@ -2,7 +2,7 @@
 
 # Download
 
-[💾 Download Imagem Resize CLI](src\ImageResize.CLI\bin\Release\ImageResize.CLI.exe)
+[💾 Download Imagem Resize CLI](release/ImageResize.CLI.exe)
 
 # Projects
 
