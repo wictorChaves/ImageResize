@@ -2,7 +2,7 @@
 
 # Download
 
-[💾 Download Imagem Resize CLI](release/ImageResize.CLI.exe)
+[💾 Download Imagem Resize CLI](https://github.com/wictorChaves/ImageResize/raw/master/release/ImageResize.CLI.exe)
 
 # Projects
 
