@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "ImageResize.Service.Test": {
+      "commandName": "Project"
+    }
+  }
+}

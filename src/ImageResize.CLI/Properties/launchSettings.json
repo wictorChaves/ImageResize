@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ImageResize.CLI": {
+      "commandName": "Project",
+      "commandLineArgs": "--side=1366x768 --input=\"C:\\Users\\wictor\\Desktop\\testes\\horizontal.jpg\"   --output=\"C:\\Users\\wictor\\Desktop\\testes\\horizontal_cli_teste.jpg\" --enlarge --aligntop"
+    }
+  }
+}
