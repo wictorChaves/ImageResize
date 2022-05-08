@@ -4,6 +4,12 @@
 
 [💾 Download Imagem Resize CLI](https://github.com/wictorChaves/ImageResize/raw/master/release/ImageResize.CLI.exe)
 
+### Command example
+
+```cmd
+ImageResize.CLI.exe --side=1366x768 --input="C:\temp\horizontal.jpg" --output="C:\temp\horizontal_cli_teste.jpg"
+```
+
 # Projects
 
 ## 💻ImageResize.CLI
