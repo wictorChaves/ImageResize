@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageResize.Form", "ImageResize\ImageResize.Form.csproj", "{1878E0C4-A84E-4B2B-B686-03ADA4D3903F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageResize.CLI", "src\ImageResize.CLI\ImageResize.CLI.csproj", "{6CDEF3F5-547E-42FC-9797-C777C61ED684}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageResize.CLI", "src\ImageResize.CLI\ImageResize.CLI.csproj", "{6CDEF3F5-547E-42FC-9797-C777C61ED684}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageResize.Service", "src\ImageResize.Service\ImageResize.Service.csproj", "{B056D3A0-2585-4319-9B32-24DE1FE6586A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageResize.Service", "src\ImageResize.Service\ImageResize.Service.csproj", "{B056D3A0-2585-4319-9B32-24DE1FE6586A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageResize.Service.Test", "src\ImageResize.Service.Test\ImageResize.Service.Test.csproj", "{01891BD3-9CE6-4C41-B6CA-E9F012F2DA94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageResize.Service.Test", "src\ImageResize.Service.Test\ImageResize.Service.Test.csproj", "{01891BD3-9CE6-4C41-B6CA-E9F012F2DA94}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageResize.WinFormsApp", "src\ImageResize.WinFormsApp\ImageResize.WinFormsApp.csproj", "{4A49F879-4647-4E36-9E3E-31312D06ABE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1878E0C4-A84E-4B2B-B686-03ADA4D3903F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1878E0C4-A84E-4B2B-B686-03ADA4D3903F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1878E0C4-A84E-4B2B-B686-03ADA4D3903F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1878E0C4-A84E-4B2B-B686-03ADA4D3903F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6CDEF3F5-547E-42FC-9797-C777C61ED684}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6CDEF3F5-547E-42FC-9797-C777C61ED684}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CDEF3F5-547E-42FC-9797-C777C61ED684}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{01891BD3-9CE6-4C41-B6CA-E9F012F2DA94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01891BD3-9CE6-4C41-B6CA-E9F012F2DA94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01891BD3-9CE6-4C41-B6CA-E9F012F2DA94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A49F879-4647-4E36-9E3E-31312D06ABE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A49F879-4647-4E36-9E3E-31312D06ABE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A49F879-4647-4E36-9E3E-31312D06ABE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A49F879-4647-4E36-9E3E-31312D06ABE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
