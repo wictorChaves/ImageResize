@@ -50,7 +50,7 @@ namespace ImageResize.WinFormsApp
             var currentFilename = Path.GetFileNameWithoutExtension(textBoxSource.Text);
             var extension = Path.GetExtension(textBoxSource.Text);
             var pathOutput = textBoxDestiny.Text + "\\" +
-                currentFilename + "_" + size.Width.ToString() + "x" + size.Height.ToString() + "_" + "." + extension;
+                currentFilename + "_" + size.Width.ToString() + "x" + size.Height.ToString() + extension;
 
             imagemResize.Resize(size)
             .Save(pathOutput, image.RawFormat);
@@ -144,7 +144,7 @@ namespace ImageResize.WinFormsApp
             var currentFilename = Path.GetFileNameWithoutExtension(pathSource);
             var extension = Path.GetExtension(pathSource);
             var pathOutput = textBoxMultiDestiny.Text + "\\" +
-                currentFilename + "_" + size.Width.ToString() + "x" + size.Height.ToString() + "_" + "." + extension;
+                currentFilename + "_" + size.Width.ToString() + "x" + size.Height.ToString() + extension;
 
             imagemResize.Resize(size).Save(pathOutput, image.RawFormat);
         }
